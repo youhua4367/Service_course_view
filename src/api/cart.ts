@@ -29,5 +29,5 @@ export const cartGetService = (): Promise<ApiResponse> => {
  * 清空购物车
  */
 export const cartCleanService = (): Promise<ApiResponse> => {
-    return request.get("user/cart/clean");
+    return request.delete("/user/cart/clean");
 }

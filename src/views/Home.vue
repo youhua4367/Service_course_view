@@ -12,8 +12,6 @@ const addressStore = useAddressStore();
 const foodType = ref<FoodType[]>([])
 const businessStore = useBusinessStore()
 
-// 绑定 DOM
-const searchRef = ref<HTMLElement | null>(null)
 const router = useRouter();
 
 // 定义经纬度
@@ -99,7 +97,7 @@ onMounted(() => {
                 {{ addressStore.currentAddress }}<i style="margin-left: 0.2vw" class="fa fa-caret-down"></i>
             </div>
         </div>
-        <div class="search" ref="searchRef">
+        <div class="search">
             <div id='fixedSearchBox' class="search-box">
                 <div class='search-panel'>
                     <i class="fa fa-search" style="flex: 0 0 6vw;padding-left: 8px;padding-right: 3px"></i>
